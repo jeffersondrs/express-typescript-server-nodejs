@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "builds": [{ "src": "dist/src/**/*.ts", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "dist/server.js" }],
+  "env": {
+    "DATABASE_URL": "file:./dev.db"
+  }
+}

@@ -9,9 +9,9 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon dist/server.js",
-    "build": "tsc && npx prisma generate",
+    "start": "tsc && npx prisma generate",
     "preinstall": "npx prisma generate",
-    "start": "node dist/server.js"
+    "build": "npx prisma generate && node dist/server.js"
   },
   "keywords": [],
   "author": "",

@@ -38,9 +38,6 @@ const create = CatchAsync(async (req: Request, res: Response) => {
     where: {
       email: email,
     },
-    include: {
-      links: true,
-    },
   });
 
   if (existingUser) {

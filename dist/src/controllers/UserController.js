@@ -22,9 +22,6 @@ const create = CatchAsync(async (req, res) => {
         where: {
             email: email,
         },
-        include: {
-            links: true,
-        },
     });
     if (existingUser) {
         return res

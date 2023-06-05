@@ -2,16 +2,16 @@
   "name": "socialmediaserver",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "server.js",
   "engines": {
     "node": "18.x"
   },
   "type": "module",
   "scripts": {
-    "dev": "nodemon dist/server.js",
+    "dev": "nodemon server.js",
     "start": "tsc && npx prisma generate",
     "preinstall": "npx prisma generate",
-    "build": "npx prisma generate && node dist/server.js"
+    "build": "npx prisma generate && node server.js"
   },
   "keywords": [],
   "author": "",

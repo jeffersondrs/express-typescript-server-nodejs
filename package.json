@@ -10,8 +10,8 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "tsc && npx prisma generate",
-    "preinstall": "npx prisma generate",
-    "vercel-build": "npx prisma generate && prisma migrate deploy && node server.js"
+    "preinstall": "npx prisma generate && prisma migrate deploy",
+    "build": "npx prisma generate && prisma migrate deploy"
   },
   "keywords": [],
   "author": "",

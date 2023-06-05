@@ -11,7 +11,7 @@
     "dev": "nodemon server.js",
     "start": "tsc && npx prisma generate",
     "preinstall": "npx prisma generate",
-    "build": "npx prisma generate && node server.js"
+    "build": "npx prisma generate && prisma migrate deploy && node server.js"
   },
   "keywords": [],
   "author": "",

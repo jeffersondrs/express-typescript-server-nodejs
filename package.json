@@ -6,7 +6,7 @@
   "engines": {
     "node": "18.x"
   },
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "tsc && npx prisma generate",

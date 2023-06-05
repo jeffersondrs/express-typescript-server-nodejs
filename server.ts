@@ -11,3 +11,11 @@ server.listen(port, "127.0.0.1", () => {
 server.on("close", () => {
   prisma.$disconnect();
 });
+
+process.on("unhandledRejection", (err: any) => {
+  console.log(err.name, err.message);
+  console.log("Unhandled Rejection! Shutting down...");
+  server.close(() => {
+    process.exit(1);
+  });
+});
